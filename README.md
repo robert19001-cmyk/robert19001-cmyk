@@ -42,6 +42,8 @@ https://v7inb-hyaaa-aaaal-qw7aq-cai.icp0.io/
 
 Linter, runtime preflight, and recovery check for MCP tool schemas.
 
+Proof page: https://mcp-lint-alpha.vercel.app/
+
 - Lints MCP tool schemas for compatibility across major MCP clients.
 - Includes rules for Claude, Cursor, Gemini, VS Code Copilot, Windsurf, Cline, OpenAI Agents SDK, and Continue.dev.
 - Runtime preflight checks score agent tool-call risk before execution.
