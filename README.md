@@ -9,7 +9,7 @@ Building canister-native products, AI agent tooling, and developer infrastructur
 ## Current Focus
 
 - Internet Computer applications with Motoko, asset canisters, Internet Identity, and canister-first architecture.
-- AI agent safety tooling for MCP schemas, runtime preflight checks, and cross-client compatibility.
+- AI agent safety tooling for MCP schemas, runtime preflight, and recovery from tool failures.
 - Practical products that are inspectable, documented, and deployed.
 
 ## Featured Projects
@@ -40,17 +40,17 @@ https://v7inb-hyaaa-aaaal-qw7aq-cai.icp0.io/
 [![npm downloads](https://img.shields.io/npm/dm/mcp-lint)](https://www.npmjs.com/package/mcp-lint)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/robert19001-cmyk/mcp-lint/blob/main/LICENSE)
 
-Linter and runtime preflight firewall for MCP tool schemas.
+Linter, runtime preflight, and recovery check for MCP tool schemas.
 
 - Lints MCP tool schemas for compatibility across major MCP clients.
 - Includes rules for Claude, Cursor, Gemini, VS Code Copilot, Windsurf, Cline, OpenAI Agents SDK, and Continue.dev.
 - Runtime preflight checks score agent tool-call risk before execution.
-- TypeScript, Node.js, CLI-first developer workflow.
+- `mcp-lint recover` scores whether an agent that can only call tools can recover from a tool failure.
 
 ```bash
 npm install -g mcp-lint
 mcp-lint check tools.json
-mcp-lint preflight action.json --policy preflight.yml
+mcp-lint recover failures.json
 ```
 
 ## Stack
