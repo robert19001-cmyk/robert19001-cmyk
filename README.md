@@ -44,15 +44,15 @@ Linter, runtime preflight, and recovery check for MCP tool schemas.
 
 Proof page: https://mcp-lint-alpha.vercel.app/
 
-- Lints MCP tool schemas for compatibility across major MCP clients.
-- Includes rules for Claude, Cursor, Gemini, VS Code Copilot, Windsurf, Cline, OpenAI Agents SDK, and Continue.dev.
+- Lints MCP tool schemas for Claude, Cursor, Gemini, VS Code Copilot, Windsurf, Cline, OpenAI Agents SDK, and Continue.dev.
+- `npx mcp-lint` looks for tools.json, tools.yaml, tools.yml, mcp-tools.json, mcp-tools.yaml, and mcp-tools.yml.
 - Runtime preflight checks score agent tool-call risk before execution.
 - `mcp-lint recover` scores whether an agent that can only call tools can recover from a tool failure.
+- `mcp-lint catalog` lists resources and prompts and does not call a tool.
 
 ```bash
-npm install -g mcp-lint
-mcp-lint check tools.json
-mcp-lint recover failures.json
+npx mcp-lint
+npx mcp-lint recover errors.json
 ```
 
 ## Stack
