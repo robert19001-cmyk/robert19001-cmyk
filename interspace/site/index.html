@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Interspace · Strony, na których Twój produkt gra główną rolę</title>
+<meta name="description" content="Interspace robi strony, na których Twoje danie, towar albo miejsce wygląda jak w drogiej reklamie. Scena 3D na żywo, którą gość sam obraca. Od 4 900 zł.">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#f3f2ee">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23121210'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%23ff3d1f'/%3E%3C/svg%3E">
+<link rel="preload" href="assets/fonts/archivo-latin-standard-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/site.css?v=1">
+</head>
+<body>
+<a class="skip" href="#final">Przejdź do kontaktu</a>
+
+<div id="loader" aria-hidden="true">
+  <p class="ld-words"><span>Twój</span> <span>produkt</span> <span>w roli</span> <em>głównej.</em></p>
+  <p class="ld-meta"><i class="dot"></i><span id="ldn">000</span><span>Interspace · ustawiam plan</span></p>
+</div>
+
+<header class="nav">
+  <a class="logo" href="#top" aria-label="Interspace, początek strony"><i class="dot" aria-hidden="true"></i>Interspace</a>
+  <p class="take" aria-hidden="true"><span id="takeN">00</span><span class="take-of">/ 05</span><span id="takeL">Wejście</span></p>
+  <a class="btn sm" href="#final">Napisz do nas</a>
+</header>
+
+<main id="top">
+<section class="hero" id="hero" aria-label="Plan zdjęciowy Interspace">
+  <div class="stage" id="stage">
+
+    <div class="poster" id="poster" aria-hidden="true"><span data-name>Twoja Firma</span></div>
+    <canvas id="gl" aria-hidden="true"></canvas>
+    <div class="nogl" id="nogl" hidden>Scena 3D nie wystartowała w tej przeglądarce. Reszta strony działa normalnie.</div>
+
+    <div class="steps" id="steps">
+
+      <div class="step s-intro" data-step="0" data-a="0" data-b="0.115" data-label="Wejście">
+        <h1 id="h1"><span class="ln"><span>Twój produkt</span></span><span class="ln"><span>w roli</span></span><span class="ln"><span><em>głównej.</em></span></span></h1>
+        <div class="intro-foot">
+          <p class="lead">Robimy strony, na których Twoje danie, towar albo miejsce wygląda jak w drogiej reklamie. Dla restauracji, sklepów i pensjonatów. Od 4&nbsp;900&nbsp;zł.</p>
+          <div class="row">
+            <a class="btn" href="#final">Chcę taką stronę</a>
+            <p class="hint"><span class="hand" aria-hidden="true"></span>Złap bryłę i zakręć. Ruszaj myszką, światło idzie za Tobą.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="step s-beat" data-step="1" data-a="0.15" data-b="0.3" data-shape="flakon" data-label="Sklep">
+        <p class="kick"><span>01</span>Sklep</p>
+        <h2>Towar, który da się obejrzeć z każdej strony.</h2>
+        <p class="sub">Flakon, słoik, but. Gość obraca go sam, zanim zapyta o cenę.</p>
+      </div>
+
+      <div class="step s-beat" data-step="2" data-a="0.33" data-b="0.48" data-shape="miska" data-label="Restauracja">
+        <p class="kick"><span>02</span>Restauracja</p>
+        <h2>Danie, od którego robi się głodno.</h2>
+        <p class="sub">Zanim ktoś doczyta menu, już wie, po co przyszedł.</p>
+      </div>
+
+      <div class="step s-beat" data-step="3" data-a="0.51" data-b="0.66" data-shape="dzwonek" data-label="Pensjonat">
+        <p class="kick"><span>03</span>Pensjonat</p>
+        <h2>Miejsce, do którego chce się zadzwonić od razu.</h2>
+        <p class="sub">Pokój, widok i śniadanie pokazane o najlepszej porze dnia.</p>
+      </div>
+
+      <div class="step s-you" data-step="4" data-a="0.7" data-b="0.86" data-label="Twoja kolej">
+        <p class="kick"><span>04</span>Twoja kolej</p>
+        <h2>Teraz ustaw swój kadr.</h2>
+        <div class="panel" data-ui>
+          <div class="field">
+            <label for="nm">Nazwa Twojej firmy</label>
+            <input id="nm" type="text" maxlength="28" autocomplete="organization" placeholder="np. Pensjonat Jezioro" spellcheck="false">
+          </div>
+          <div class="field">
+            <span class="lab" id="lab-b">Bohater</span>
+            <div class="chips" role="group" aria-labelledby="lab-b">
+              <button type="button" data-pick="flakon" aria-pressed="false">Flakon</button>
+              <button type="button" data-pick="miska" aria-pressed="false">Miska</button>
+              <button type="button" data-pick="dzwonek" aria-pressed="true">Dzwonek</button>
+            </div>
+          </div>
+          <div class="field">
+            <span class="lab" id="lab-k">Kolor</span>
+            <div class="swatches" role="group" aria-labelledby="lab-k">
+              <button type="button" data-glaze="#141412" aria-pressed="true" aria-label="Atrament" style="--c:#141412"></button>
+              <button type="button" data-glaze="#e3331a" aria-pressed="false" aria-label="Cynober" style="--c:#e3331a"></button>
+              <button type="button" data-glaze="#1f3fd1" aria-pressed="false" aria-label="Kobalt" style="--c:#1f3fd1"></button>
+              <button type="button" data-glaze="#1d5a43" aria-pressed="false" aria-label="Butelkowa zieleń" style="--c:#1d5a43"></button>
+              <button type="button" data-glaze="#ece8de" aria-pressed="false" aria-label="Kość" style="--c:#ece8de"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="step s-final" id="final" data-step="5" data-a="0.9" data-b="1" data-label="Kadr gotowy">
+        <p class="kick"><span>05</span>Kadr gotowy</p>
+        <h2>W roli głównej: <em data-name>Twoja Firma</em>.</h2>
+        <p class="sub">Ułożyłeś to w minutę. Całą stronę robimy w cztery tygodnie.</p>
+        <div class="row" data-ui>
+          <a class="btn big" id="mail" href="mailto:kontakt@interspace.studio?subject=Chc%C4%99%20tak%C4%85%20stron%C4%99">Chcę taką stronę</a>
+          <button class="btn ghost" id="copy" type="button" data-mail="kontakt@interspace.studio">Skopiuj e-mail</button>
+        </div>
+        <p class="fine">kontakt@interspace.studio · odpowiadamy w dwa dni</p>
+      </div>
+
+    </div>
+
+    <p class="credits" aria-hidden="true">Interspace przedstawia <b>·</b> w roli głównej <b data-name>Twoja Firma</b> <b>·</b> scena 3D na żywo <b>·</b> ruch <b>·</b> teksty <b>·</b> telefon <b>·</b> Kaszuby 2026</p>
+    <div class="rail" aria-hidden="true"><i id="railbar"></i></div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <p>© 2026 Interspace · Kaszuby</p>
+  <p><a href="mailto:kontakt@interspace.studio">kontakt@interspace.studio</a></p>
+</footer>
+
+<script type="module" src="assets/site.js?v=1"></script>
+</body>
+</html>
